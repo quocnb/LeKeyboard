@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeKeyboardView" customModule="LeKeyboardExtension" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="eiM-9h-G3K" id="BRp-ff-sS5"/>
+                <outlet property="nextKeyboardButton" destination="VR9-MR-7so" id="YHM-kN-gnn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="l37-9O-r9l" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR9-MR-7so" customClass="ShapeButton" customModule="LeKeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="4" y="166" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="LIS-o7-kIf"/>
+                        <constraint firstAttribute="height" constant="45" id="UbA-hY-zBd"/>
+                    </constraints>
+                    <state key="normal" image="NextKeyboard"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-2Q-iw3" customClass="ShapeButton" customModule="LeKeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="55" y="166" width="265" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="03f-QF-KFf"/>
+                    </constraints>
+                    <state key="normal" title="Dấu cách"/>
+                    <connections>
+                        <action selector="didSelectSpaceButton:" destination="-1" eventType="touchDown" id="j3a-L9-IyX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-9h-G3K" customClass="ShapeButton" customModule="LeKeyboardExtension" customModuleProvider="target">
+                    <rect key="frame" x="326" y="166" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="1UC-KD-AJA"/>
+                    </constraints>
+                    <state key="normal" image="Backspace"/>
+                    <connections>
+                        <action selector="didTapDeleteButton:" destination="-1" eventType="touchDown" id="4e5-ze-9NI"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mh1-Fr-cGC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="czD-SB-7ut"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Mh1-Fr-cGC" firstAttribute="top" secondItem="w7N-xI-CNk" secondAttribute="top" id="1Hx-aT-5h8"/>
+                <constraint firstItem="w7N-xI-CNk" firstAttribute="bottom" secondItem="VR9-MR-7so" secondAttribute="bottom" constant="5" id="1tp-5l-cEa"/>
+                <constraint firstItem="OME-2Q-iw3" firstAttribute="bottom" secondItem="eiM-9h-G3K" secondAttribute="bottom" id="6x1-gi-wnJ"/>
+                <constraint firstItem="VR9-MR-7so" firstAttribute="leading" secondItem="w7N-xI-CNk" secondAttribute="leading" constant="4" id="BBa-md-gcO"/>
+                <constraint firstItem="eiM-9h-G3K" firstAttribute="height" secondItem="OME-2Q-iw3" secondAttribute="height" id="Ir5-rx-nEF"/>
+                <constraint firstItem="OME-2Q-iw3" firstAttribute="leading" secondItem="VR9-MR-7so" secondAttribute="trailing" constant="6" id="So8-9f-2F3"/>
+                <constraint firstItem="w7N-xI-CNk" firstAttribute="trailing" secondItem="eiM-9h-G3K" secondAttribute="trailing" constant="4" id="TJx-7v-hT2"/>
+                <constraint firstItem="eiM-9h-G3K" firstAttribute="leading" secondItem="OME-2Q-iw3" secondAttribute="trailing" constant="6" id="Zao-eU-S6z"/>
+                <constraint firstItem="w7N-xI-CNk" firstAttribute="bottom" secondItem="OME-2Q-iw3" secondAttribute="bottom" constant="5" id="aVF-nC-jpg"/>
+                <constraint firstItem="w7N-xI-CNk" firstAttribute="trailing" secondItem="Mh1-Fr-cGC" secondAttribute="trailing" id="gfG-iE-enR"/>
+                <constraint firstItem="Mh1-Fr-cGC" firstAttribute="leading" secondItem="w7N-xI-CNk" secondAttribute="leading" id="o8W-JR-wVv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="w7N-xI-CNk"/>
+            <point key="canvasLocation" x="94" y="185"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Backspace" width="24" height="18"/>
+        <image name="NextKeyboard" width="19" height="19"/>
+    </resources>
+</document>

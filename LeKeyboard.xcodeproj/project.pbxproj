@@ -7,14 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2A996A82CC03F689774B3E /* Pods_LeKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C9E8CF5034C7395DC5D5D4 /* Pods_LeKeyboard.framework */; };
+		7990D58120BFC18500EBEDC7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990D57E20BFC18400EBEDC7 /* UIViewExtension.swift */; };
+		7990D58D20BFE84700EBEDC7 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990D58C20BFE84700EBEDC7 /* KeyboardViewController.swift */; };
+		7990D59120BFE84700EBEDC7 /* LeKeyboard2Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7990D58A20BFE84700EBEDC7 /* LeKeyboard2Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7990D59520BFE88700EBEDC7 /* LeKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CF02B20BE9A2200AAB8D0 /* LeKeyboardView.swift */; };
+		7990D59620BFE88800EBEDC7 /* LeKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CF02B20BE9A2200AAB8D0 /* LeKeyboardView.swift */; };
+		7990D59720BFE88C00EBEDC7 /* LeKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799CF02920BE9A0600AAB8D0 /* LeKeyboardView.xib */; };
+		7990D59820BFE88D00EBEDC7 /* LeKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 799CF02920BE9A0600AAB8D0 /* LeKeyboardView.xib */; };
+		7990D59920BFE89000EBEDC7 /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CF03020BE9F1000AAB8D0 /* ShapeButton.swift */; };
+		7990D59A20BFE89100EBEDC7 /* ShapeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CF03020BE9F1000AAB8D0 /* ShapeButton.swift */; };
+		7990D59B20BFE8DF00EBEDC7 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990D57820BFAF7900EBEDC7 /* CommonUtils.swift */; };
+		7990D59C20BFE8E000EBEDC7 /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990D57820BFAF7900EBEDC7 /* CommonUtils.swift */; };
+		7990D59D20BFE91C00EBEDC7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7990D57E20BFC18400EBEDC7 /* UIViewExtension.swift */; };
+		7990D59E20BFE97600EBEDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799CF00E20BE970E00AAB8D0 /* Assets.xcassets */; };
 		799CF00820BE970D00AAB8D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CF00720BE970D00AAB8D0 /* AppDelegate.swift */; };
 		799CF00A20BE970D00AAB8D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799CF00920BE970D00AAB8D0 /* ViewController.swift */; };
 		799CF00D20BE970D00AAB8D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799CF00B20BE970D00AAB8D0 /* Main.storyboard */; };
 		799CF00F20BE970E00AAB8D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799CF00E20BE970E00AAB8D0 /* Assets.xcassets */; };
 		799CF01220BE970E00AAB8D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799CF01020BE970E00AAB8D0 /* LaunchScreen.storyboard */; };
+		D864A4DE6875072F6D92147F /* Pods_LeKeyboard2Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8E82A2E4B21A57A0C58933D /* Pods_LeKeyboard2Extension.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7990D58F20BFE84700EBEDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 799CEFFC20BE970D00AAB8D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7990D58920BFE84700EBEDC7;
+			remoteInfo = LeKeyboard2Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		799CF02820BE97A500AAB8D0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7990D59120BFE84700EBEDC7 /* LeKeyboard2Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		14C9E8CF5034C7395DC5D5D4 /* Pods_LeKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBFA0D123B8A56AFC2675A5 /* Pods-LeKeyboard2Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeKeyboard2Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeKeyboard2Extension/Pods-LeKeyboard2Extension.release.xcconfig"; sourceTree = "<group>"; };
+		42BE1AE70639C1CF97426742 /* Pods_LeKeyboardExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeKeyboardExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7990D57820BFAF7900EBEDC7 /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		7990D57E20BFC18400EBEDC7 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		7990D58A20BFE84700EBEDC7 /* LeKeyboard2Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LeKeyboard2Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7990D58C20BFE84700EBEDC7 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		7990D58E20BFE84700EBEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		799CF00420BE970D00AAB8D0 /* LeKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799CF00720BE970D00AAB8D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799CF00920BE970D00AAB8D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,24 +69,73 @@
 		799CF00E20BE970E00AAB8D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799CF01120BE970E00AAB8D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799CF01320BE970E00AAB8D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799CF02920BE9A0600AAB8D0 /* LeKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeKeyboardView.xib; sourceTree = "<group>"; };
+		799CF02B20BE9A2200AAB8D0 /* LeKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeKeyboardView.swift; sourceTree = "<group>"; };
+		799CF03020BE9F1000AAB8D0 /* ShapeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeButton.swift; sourceTree = "<group>"; };
+		A8E82A2E4B21A57A0C58933D /* Pods_LeKeyboard2Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeKeyboard2Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44E43FC8BC8F2CC752AC60D /* Pods-LeKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeKeyboard/Pods-LeKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		D79835DD8CCDD248B1C3F113 /* Pods-LeKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeKeyboard/Pods-LeKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		DFBE1B2E2FA7A6D09AE8EDE0 /* Pods-LeKeyboard2Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeKeyboard2Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeKeyboard2Extension/Pods-LeKeyboard2Extension.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7990D58720BFE84700EBEDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D864A4DE6875072F6D92147F /* Pods_LeKeyboard2Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		799CF00120BE970D00AAB8D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2A996A82CC03F689774B3E /* Pods_LeKeyboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B9C072EA64AEF5DAFB5BC84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14C9E8CF5034C7395DC5D5D4 /* Pods_LeKeyboard.framework */,
+				42BE1AE70639C1CF97426742 /* Pods_LeKeyboardExtension.framework */,
+				A8E82A2E4B21A57A0C58933D /* Pods_LeKeyboard2Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F48E79A044351213CC7D25A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D79835DD8CCDD248B1C3F113 /* Pods-LeKeyboard.debug.xcconfig */,
+				D44E43FC8BC8F2CC752AC60D /* Pods-LeKeyboard.release.xcconfig */,
+				DFBE1B2E2FA7A6D09AE8EDE0 /* Pods-LeKeyboard2Extension.debug.xcconfig */,
+				1FBFA0D123B8A56AFC2675A5 /* Pods-LeKeyboard2Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7990D58B20BFE84700EBEDC7 /* LeKeyboard2Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7990D58C20BFE84700EBEDC7 /* KeyboardViewController.swift */,
+				7990D58E20BFE84700EBEDC7 /* Info.plist */,
+			);
+			path = LeKeyboard2Extension;
+			sourceTree = "<group>";
+		};
 		799CEFFB20BE970D00AAB8D0 = {
 			isa = PBXGroup;
 			children = (
 				799CF00620BE970D00AAB8D0 /* LeKeyboard */,
+				7990D58B20BFE84700EBEDC7 /* LeKeyboard2Extension */,
 				799CF00520BE970D00AAB8D0 /* Products */,
+				4F48E79A044351213CC7D25A /* Pods */,
+				4B9C072EA64AEF5DAFB5BC84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				799CF00420BE970D00AAB8D0 /* LeKeyboard.app */,
+				7990D58A20BFE84700EBEDC7 /* LeKeyboard2Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +151,17 @@
 		799CF00620BE970D00AAB8D0 /* LeKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				7990D57E20BFC18400EBEDC7 /* UIViewExtension.swift */,
 				799CF00720BE970D00AAB8D0 /* AppDelegate.swift */,
 				799CF00920BE970D00AAB8D0 /* ViewController.swift */,
 				799CF00B20BE970D00AAB8D0 /* Main.storyboard */,
 				799CF00E20BE970E00AAB8D0 /* Assets.xcassets */,
 				799CF01020BE970E00AAB8D0 /* LaunchScreen.storyboard */,
 				799CF01320BE970E00AAB8D0 /* Info.plist */,
+				7990D57820BFAF7900EBEDC7 /* CommonUtils.swift */,
+				799CF02B20BE9A2200AAB8D0 /* LeKeyboardView.swift */,
+				799CF02920BE9A0600AAB8D0 /* LeKeyboardView.xib */,
+				799CF03020BE9F1000AAB8D0 /* ShapeButton.swift */,
 			);
 			path = LeKeyboard;
 			sourceTree = "<group>";
@@ -67,17 +169,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		799CF00320BE970D00AAB8D0 /* LeKeyboard */ = {
+		7990D58920BFE84700EBEDC7 /* LeKeyboard2Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 799CF01620BE970E00AAB8D0 /* Build configuration list for PBXNativeTarget "LeKeyboard" */;
+			buildConfigurationList = 7990D59220BFE84700EBEDC7 /* Build configuration list for PBXNativeTarget "LeKeyboard2Extension" */;
 			buildPhases = (
-				799CF00020BE970D00AAB8D0 /* Sources */,
-				799CF00120BE970D00AAB8D0 /* Frameworks */,
-				799CF00220BE970D00AAB8D0 /* Resources */,
+				68C2BF40C7DB24ED2106F32A /* [CP] Check Pods Manifest.lock */,
+				7990D58620BFE84700EBEDC7 /* Sources */,
+				7990D58720BFE84700EBEDC7 /* Frameworks */,
+				7990D58820BFE84700EBEDC7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = LeKeyboard2Extension;
+			productName = LeKeyboard2Extension;
+			productReference = 7990D58A20BFE84700EBEDC7 /* LeKeyboard2Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		799CF00320BE970D00AAB8D0 /* LeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 799CF01620BE970E00AAB8D0 /* Build configuration list for PBXNativeTarget "LeKeyboard" */;
+			buildPhases = (
+				F8E6211C624F0BCA04C36532 /* [CP] Check Pods Manifest.lock */,
+				799CF00020BE970D00AAB8D0 /* Sources */,
+				799CF00120BE970D00AAB8D0 /* Frameworks */,
+				799CF00220BE970D00AAB8D0 /* Resources */,
+				799CF02820BE97A500AAB8D0 /* Embed App Extensions */,
+				7E6ED535650D4E0A3D4B33D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7990D59020BFE84700EBEDC7 /* PBXTargetDependency */,
 			);
 			name = LeKeyboard;
 			productName = LeKeyboard;
@@ -94,6 +218,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Quoc Nguyen";
 				TargetAttributes = {
+					7990D58920BFE84700EBEDC7 = {
+						CreatedOnToolsVersion = 9.4;
+					};
 					799CF00320BE970D00AAB8D0 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -113,15 +240,26 @@
 			projectRoot = "";
 			targets = (
 				799CF00320BE970D00AAB8D0 /* LeKeyboard */,
+				7990D58920BFE84700EBEDC7 /* LeKeyboard2Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7990D58820BFE84700EBEDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7990D59E20BFE97600EBEDC7 /* Assets.xcassets in Resources */,
+				7990D59820BFE88D00EBEDC7 /* LeKeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		799CF00220BE970D00AAB8D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7990D59720BFE88C00EBEDC7 /* LeKeyboardView.xib in Resources */,
 				799CF01220BE970E00AAB8D0 /* LaunchScreen.storyboard in Resources */,
 				799CF00F20BE970E00AAB8D0 /* Assets.xcassets in Resources */,
 				799CF00D20BE970D00AAB8D0 /* Main.storyboard in Resources */,
@@ -130,17 +268,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68C2BF40C7DB24ED2106F32A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeKeyboard2Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6ED535650D4E0A3D4B33D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LeKeyboard/Pods-LeKeyboard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LazySwifter/LazySwifter.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LazySwifter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LeKeyboard/Pods-LeKeyboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E6211C624F0BCA04C36532 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LeKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		7990D58620BFE84700EBEDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7990D59D20BFE91C00EBEDC7 /* UIViewExtension.swift in Sources */,
+				7990D59620BFE88800EBEDC7 /* LeKeyboardView.swift in Sources */,
+				7990D59920BFE89000EBEDC7 /* ShapeButton.swift in Sources */,
+				7990D59B20BFE8DF00EBEDC7 /* CommonUtils.swift in Sources */,
+				7990D58D20BFE84700EBEDC7 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		799CF00020BE970D00AAB8D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7990D59520BFE88700EBEDC7 /* LeKeyboardView.swift in Sources */,
+				7990D59A20BFE89100EBEDC7 /* ShapeButton.swift in Sources */,
+				7990D58120BFC18500EBEDC7 /* UIViewExtension.swift in Sources */,
 				799CF00A20BE970D00AAB8D0 /* ViewController.swift in Sources */,
+				7990D59C20BFE8E000EBEDC7 /* CommonUtils.swift in Sources */,
 				799CF00820BE970D00AAB8D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7990D59020BFE84700EBEDC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7990D58920BFE84700EBEDC7 /* LeKeyboard2Extension */;
+			targetProxy = 7990D58F20BFE84700EBEDC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		799CF00B20BE970D00AAB8D0 /* Main.storyboard */ = {
@@ -162,6 +383,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7990D59320BFE84700EBEDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBE1B2E2FA7A6D09AE8EDE0 /* Pods-LeKeyboard2Extension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
+				INFOPLIST_FILE = LeKeyboard2Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.keyboard.LeKeyboard2Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7990D59420BFE84700EBEDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBFA0D123B8A56AFC2675A5 /* Pods-LeKeyboard2Extension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
+				INFOPLIST_FILE = LeKeyboard2Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.keyboard.LeKeyboard2Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		799CF01420BE970E00AAB8D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -278,16 +541,23 @@
 		};
 		799CF01720BE970E00AAB8D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D79835DD8CCDD248B1C3F113 /* Pods-LeKeyboard.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
 				INFOPLIST_FILE = LeKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.LeKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -295,16 +565,23 @@
 		};
 		799CF01820BE970E00AAB8D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D44E43FC8BC8F2CC752AC60D /* Pods-LeKeyboard.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75M24V2QJ2;
 				INFOPLIST_FILE = LeKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quocnb.LeKeyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sothink.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +590,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7990D59220BFE84700EBEDC7 /* Build configuration list for PBXNativeTarget "LeKeyboard2Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7990D59320BFE84700EBEDC7 /* Debug */,
+				7990D59420BFE84700EBEDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		799CEFFF20BE970D00AAB8D0 /* Build configuration list for PBXProject "LeKeyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

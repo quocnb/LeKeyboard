@@ -1,0 +1,21 @@
+PODS:
+  - LazySwifter (1.0.5)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - LazySwifter
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+  https://github.com/quocnb/LazySwifter.git:
+    - LazySwifter
+
+SPEC CHECKSUMS:
+  LazySwifter: 2aabe9c0cc71a5ae16ff2c3bbff679f4d4d7d14a
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: d20faf375b6d1f03da10740444135176d55f050a
+
+COCOAPODS: 1.5.2

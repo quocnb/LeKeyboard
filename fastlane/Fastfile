@@ -1,0 +1,48 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+    desc "Build app and upload to Deploygate (ad-hoc version)"
+    lane :go do |options|
+        # increment_build_number
+        export_method = (options[:adhoc] ? "ad-hoc" : "enterprise")
+        build_app(
+            export_method: export_method
+        )
+        # uploadToDeploygate
+        # upload_symbols_to_crashlytics(dsym_path: "./ClothesMaker.app.dSYM.zip")
+        # postToChatwork
+    end
+
+    lane :uploadToDeploygate do
+        ver_no = get_version_number
+        build_no = get_build_number
+        deploygate(
+            api_token: ENV["DEPLOYGATE_API_KEY"],
+            user: ENV["DEPLOYGATE_GROUP_NAME"],
+            message: "Version #{ver_no} Build #{build_no}",
+        )
+    end
+
+    lane :postToChatwork do
+        ver_no = get_version_number
+        build_no = get_build_number
+        chatwork(
+            message: "[To:1956171] App successfully push to deploygate. Version #{ver_no} Build #{build_no}",
+            roomid: ENV["CHATWORK_ROOM_ID"],
+            success: true,
+            api_token: ENV["CHATWORK_API_KEY"]
+        )
+    end
+
+end
