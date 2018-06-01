@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeKeyboardView" customModule="LeKeyboardExtension" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeKeyboardView" customModule="LeKeyboard" customModuleProvider="target">
             <connections>
                 <outlet property="deleteButton" destination="eiM-9h-G3K" id="BRp-ff-sS5"/>
                 <outlet property="nextKeyboardButton" destination="VR9-MR-7so" id="YHM-kN-gnn"/>
@@ -21,16 +21,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR9-MR-7so" customClass="ShapeButton" customModule="LeKeyboardExtension" customModuleProvider="target">
-                    <rect key="frame" x="4" y="166" width="45" height="45"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR9-MR-7so" customClass="ShapeButton" customModule="LeKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="10" y="166" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.67843137254901964" green="0.70588235294117641" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="45" id="LIS-o7-kIf"/>
                         <constraint firstAttribute="height" constant="45" id="UbA-hY-zBd"/>
                     </constraints>
                     <state key="normal" image="NextKeyboard"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-2Q-iw3" customClass="ShapeButton" customModule="LeKeyboardExtension" customModuleProvider="target">
-                    <rect key="frame" x="55" y="166" width="265" height="45"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OME-2Q-iw3" customClass="ShapeButton" customModule="LeKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="61" y="166" width="253" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="03f-QF-KFf"/>
                     </constraints>
@@ -39,8 +40,9 @@
                         <action selector="didSelectSpaceButton:" destination="-1" eventType="touchDown" id="j3a-L9-IyX"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-9h-G3K" customClass="ShapeButton" customModule="LeKeyboardExtension" customModuleProvider="target">
-                    <rect key="frame" x="326" y="166" width="45" height="45"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiM-9h-G3K" customClass="ShapeButton" customModule="LeKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="320" y="166" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.67843137249999996" green="0.70588235290000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="45" id="1UC-KD-AJA"/>
                     </constraints>
@@ -57,15 +59,15 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <color key="backgroundColor" red="0.81960784313725488" green="0.83529411764705885" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="Mh1-Fr-cGC" firstAttribute="top" secondItem="w7N-xI-CNk" secondAttribute="top" id="1Hx-aT-5h8"/>
                 <constraint firstItem="w7N-xI-CNk" firstAttribute="bottom" secondItem="VR9-MR-7so" secondAttribute="bottom" constant="5" id="1tp-5l-cEa"/>
                 <constraint firstItem="OME-2Q-iw3" firstAttribute="bottom" secondItem="eiM-9h-G3K" secondAttribute="bottom" id="6x1-gi-wnJ"/>
-                <constraint firstItem="VR9-MR-7so" firstAttribute="leading" secondItem="w7N-xI-CNk" secondAttribute="leading" constant="4" id="BBa-md-gcO"/>
+                <constraint firstItem="VR9-MR-7so" firstAttribute="leading" secondItem="w7N-xI-CNk" secondAttribute="leading" constant="10" id="BBa-md-gcO"/>
                 <constraint firstItem="eiM-9h-G3K" firstAttribute="height" secondItem="OME-2Q-iw3" secondAttribute="height" id="Ir5-rx-nEF"/>
                 <constraint firstItem="OME-2Q-iw3" firstAttribute="leading" secondItem="VR9-MR-7so" secondAttribute="trailing" constant="6" id="So8-9f-2F3"/>
-                <constraint firstItem="w7N-xI-CNk" firstAttribute="trailing" secondItem="eiM-9h-G3K" secondAttribute="trailing" constant="4" id="TJx-7v-hT2"/>
+                <constraint firstItem="w7N-xI-CNk" firstAttribute="trailing" secondItem="eiM-9h-G3K" secondAttribute="trailing" constant="10" id="TJx-7v-hT2"/>
                 <constraint firstItem="eiM-9h-G3K" firstAttribute="leading" secondItem="OME-2Q-iw3" secondAttribute="trailing" constant="6" id="Zao-eU-S6z"/>
                 <constraint firstItem="w7N-xI-CNk" firstAttribute="bottom" secondItem="OME-2Q-iw3" secondAttribute="bottom" constant="5" id="aVF-nC-jpg"/>
                 <constraint firstItem="w7N-xI-CNk" firstAttribute="trailing" secondItem="Mh1-Fr-cGC" secondAttribute="trailing" id="gfG-iE-enR"/>

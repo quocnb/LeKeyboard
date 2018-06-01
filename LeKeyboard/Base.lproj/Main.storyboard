@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J5-Mp-KRl">
-                                <rect key="frame" x="30" y="293" width="315" height="101.5"/>
+                                <rect key="frame" x="30" y="135" width="315" height="101.5"/>
                                 <string key="text">Setting &gt; General &gt; Keyboard &gt; Add new keyboard &gt; Add LeKeyboard
 
 Can see? Quit the Setting app, and re-open it again</string>
@@ -27,16 +27,30 @@ Can see? Quit the Setting app, and re-open it again</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Test here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ym7-ds-WgD">
+                                <rect key="frame" x="40" y="60" width="295" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9HM-7J-1Rd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4J5-Mp-KRl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="9GS-ot-hP6"/>
-                            <constraint firstItem="4J5-Mp-KRl" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="9jv-ui-WPx"/>
-                            <constraint firstItem="4J5-Mp-KRl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SCc-yG-kXB"/>
+                            <constraint firstItem="4J5-Mp-KRl" firstAttribute="top" secondItem="Ym7-ds-WgD" secondAttribute="bottom" constant="30" id="Rhy-ku-ICv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4J5-Mp-KRl" secondAttribute="trailing" constant="30" id="XjP-fO-rTs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ym7-ds-WgD" secondAttribute="trailing" constant="40" id="abo-NL-j5W"/>
+                            <constraint firstItem="Ym7-ds-WgD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jkI-Cl-eAE"/>
+                            <constraint firstItem="Ym7-ds-WgD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="pbp-zC-R6K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="Ym7-ds-WgD" id="0L2-Y0-kog"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

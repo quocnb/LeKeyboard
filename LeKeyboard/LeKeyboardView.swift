@@ -48,7 +48,10 @@ class LeKeyboardView: UIView {
 
     private func commonInit() {
         self.backgroundColor = UIColor.clear
+        let specialButtonColor = UIColor(r: 173, g: 180, b: 189)
         self.addContentViewFromXib()
+        self.deleteButton.defaultBackgroundColor = specialButtonColor
+        self.nextKeyboardButton.defaultBackgroundColor = specialButtonColor
         setupButtons()
     }
 
